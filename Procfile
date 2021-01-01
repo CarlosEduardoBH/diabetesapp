@@ -1,1 +1,1 @@
-web: gunicorn conn:app
+web: gunicorn conn.py
