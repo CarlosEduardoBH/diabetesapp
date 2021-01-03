@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="static/default.css" rel="stylesheet" media="screen">
+	<link href="static/fonts.css" rel="stylesheet" media="screen">
+
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Diabetes Previsão</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="static/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+
+			</ul>
+		</div>
+		<div id="logo">
+			<h1><a href="#">Previsão de ocorrência de diabetes</a></h1>
+			<span>by Cadu <a href="https://github.com/carloseduardobh/" rel="nofollow">Data Scientist</a></span> </div>
+	</div>
+</div>
+<div id="wrapper1">
+	<div id="welcome" class="container">
+		<div class="title">
+			<h2>Classificação</h2>
+			<span class="byline">Previsão de ocorrência de diabetes</span> </div>
+		
+		<div class="content">
+			<h5>
+			<p>O diabetes é uma doença crônica em que o corpo desenvolve resistência à insulina, um hormônio que converte os alimentos em glicose. O diabetes afeta muitas pessoas em todo o mundo e é normalmente dividido em diabetes tipo 1 e tipo 2. Ambos possuem características diferentes.</p>
+			<p>O objetivo é <strong>prever</strong> com diagnóstico se um paciente tem diabetes ou não, com base em certas medidas diagnósticas.
+    		O conjunto de dados consistem em várias variáveis ​​preditoras médicas e uma variável de destino (Target).</p>
+    		<p>Abaixo as variáveis que devem ser preenchidas para o Modelo fazer a previsão. Esse modelo foi treinado por diversos algoritimos e obteve acurácia de 92.21%</p><br>
+		</h5>
+
+</div>
+</div>
+<div id="wrapper3">
+	<div id="portfolio" class="container">
+		<div class="title">
+			<h2>Descrição das Variáveis</h2>
+			<span class="byline"></span> </div>
+		
+
+    <p>
+    <strong> Gravidez: </strong> Número de vezes que engravidou.<br><br>
+    <strong> Glicose: </strong> Concentração de glicose plasmática a 2 horas em um teste oral de tolerância à glicose.<br><br>
+    <strong> Pressão arterial: </strong> Pressão arterial diastólica (mm Hg).<br><br>
+    <strong> SkinThickness: </strong> Espessura da dobra da pele do tríceps (mm).<br><br>
+    <strong> Insulina: </strong> Insulina sérica de 2 horas (mu U / ml).<br><br>
+    <strong> IMC: </strong> Índice de massa corporal (peso em kg / (altura em m) ^ 2).<br><br>
+    <strong> DiabetesPedigreeFunction (PF): </strong> Função de pedigree de diabetes.<br><br>
+    <strong> Idade: </strong> Idade.<br><br>
+    </p>
+
+
+    <div class="container">
+      <h2><center>Classificação</center></h2>	
+      <p></p><br><br>
+      <form action="/verificar" method="post">
+        <div class="form-group row">
+          <label for="Pregnancies" class="col-sm-2 col-form-label">Gravidez:</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" name="Pregnancies">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="Glucose" class="col-sm-2 col-form-label">Glicose</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" id="Glucose" name="Glucose">
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <label for="BloodPressure" class="col-sm-2 col-form-label">Pressão arterial</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" id="BloodPressure" name="BloodPressure">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="SkinThickness" class="col-sm-2 col-form-label">SkinThickness</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" id="SkinThickness"  name="SkinThickness">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="Insulin" class="col-sm-2 col-form-label">Insulina</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" id="Insulin" name="Insulin">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="BMI" class="col-sm-2 col-form-label">IMC</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" id="BMI" name="BMI">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="DiabetesPedigreeFunction" class="col-sm-2 col-form-label">Diabetes (PF)</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" name="DiabetesPedigreeFunction" id="DiabetesPedigreeFunction" required="True">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Age" class="col-sm-2 col-form-label">Idade</label>
+          <div class="col-sm-3">
+            <input type="value" class="form-control" name="Age" id="Age" required="True">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Verificar</button>
+          </div>
+        </div>  
+        <br><br>
+      </form>
+
+      
+     <!-- {% if classe %} -->
+      {% if classe == "1" %}
+                <div> 
+                    <h2> <span style="color: red"><b>POSITIVO!</b></span> <b> CONSULTE SEU MÉDICO!</b> <br> A probabilidade de ser diagnosticado com Diabetes é de: {{probab}}%</h2>  
+
+        </div>
+      {% else %}
+                <div>
+                    <h2> <span style="color: green"><b>NEGATIVO!</b></span> A probabilidade de ser NÃO ser diagnosticado com Diabetes é de: {{probab}}%</h2> 
+        </div>
+      {% endif %}
+      <!-- {% endif %} -->
+  <!-- FIM DO CONTAINER-->
+</div> 
+</div>
+</div> 
+</div>
+<div id="copyright">
+	<div class="title">
+		<h2>Contato</h2>
+		<span class="byline">Fale Comigo</span> </div>
+	<ul class="contact">
+
+		<li><a href="https://github.com/carloseduardobh/" target="blank" class="icon icon-github"><span>GitHub</span></a></li>
+		<li><a href="https://www.linkedin.com/in/carlos-eduardo-silva-bh/" target="blank" class="icon icon-linkedin"><span>Linkedin</span></a></li>
+		<li><a href="https://github.com/carloseduardobh/"" target="blank" class="icon icon-dribbble"><span>Site</span></a></li>
+		<li><a href="mailto:eduardojhoanes@gmail.com" class="icon icon-envelope-alt"><span>Email</span></a></li>
+		<li><a href="https://www.youtube.com/channel/UCgVNVWVSi27vFM3eCKh0tDw/featured" target="blank" class="icon icon-youtube"><span>YouTube</span></a></li>
+	</ul>
+	<p>&copy;  All rights reserved. | by Cadu <a href="https://github.com/carloseduardobh/">Data Scientist</a>.</p>
+</div>
+</body>
+</html>
